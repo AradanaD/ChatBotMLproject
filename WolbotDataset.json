@@ -29,8 +29,6 @@
 			"responses": ["Hey there ! I have been programmed to aid you in your process of learning python\n Table of Contents :\n 1.Keywords\n 2.Strings\n 3.Identifiers\n 4.Operators and Expressions\n what would you like to start with ?"],
 			"context": [""]
 		},
-		{	"tag": "
-		}
 		{
 			"tag": "operator-declaration",
 			"patterns": ["syntax of operators in python","declaration of operators in python","how to declare an operator in python","how do i declare an operator in python with example","sample example of an operator"],
