@@ -1,80 +1,134 @@
 {
 	"intents": [{
 			"tag": "greeting",
-			"patterns": ["hey","wassup","hi","hey there","hello","heyyy","hello there"],
-			"responses": ["Hey wassup,i'm Wolbot from Newolf Society, how may i help you?"],
+			"patterns": ["hey","wassup","hi","ih","hey there","hello","heyyy","hello there"],
+			"responses": ["Heyy, i'm Cookie your coding buddy, developed by AltShiftTab! How may i help you?"],
 			"context": [""]
 		},
 		{
 			"tag": "goodbye",
 			"patterns": ["bye", "see you later", "goodbye", "gtg", "nice chatting with you", "till next time"],
-			"responses": ["Adios amigo","byeee","have a nice day :)","c ya later!byeee"],
+			"responses": ["Adios amigo","byeee","have a nice day :)","See ya later!byeee"],
 			"context": [""]
 		},
 		{
 			"tag": "thanks",
 			"patterns": ["thanks", "thank you", "thanks for the help","ty","tysm"],
-			"responses": ["hey no probs buddy", "Anytime mate", "You're welcome"],
-			"context": [""]
-		},
-		{
-			"tag": "noanswer",
-			"patterns": [],
-			"responses": ["stop zoning out on me buddy","hey what's going on,what's wrong"],
+			"responses": ["no issues", "Anytime!1", "You're welcome"],
 			"context": [""]
 		},
 		{
 			"tag": "FAQ",
 			"patterns": ["Are you a bot?","Are you an actual person or?","is this automated?","is this an automated message?" ],
-			"responses": ["Ouch :("],
-			"context": [""]
-		},
-		{
-			"tag": "extension",
-			"patterns": ["ohh","oh","my bad","sorry","lmao","don't lie","lol","what?","whatta bot"],
-			"responses": ["i'm just kidding XD,I am Newolf society's bot. So how may i help you ? "],
+			"responses": ["yes i am a code-bot"],
 			"context": [""]
 		},
 		{
 			"tag": "intro",
-			"patterns": ["what is this society all about","what do you guys do exactly","what does new wolf society do","what do we do in this club?"],
-			"responses": ["Newolf Society is a haven for creators,makers and hackers to network, learn and build. If you want to get in you've got to participate in the Icebreaker Program"],
+			"patterns": ["what can i learn from this bot","what does this bot teach","what does Cookie do","what do we using Cookie?","table of contents","what is the table of contents ?"],
+			"responses": ["Hey there ! I have been programmed to aid you in your process of learning python\n Table of Contents :\n 1.Keywords\n 2.Strings\n 3.Identifiers\n 4.Operators and Expressions\n what would you like to start with ?"],
 			"context": [""]
 		},
 		{
-			"tag": "entry",
-			"patterns": ["How do i get in?","How do we get in?","what is the Ice Breaker program?","i want to get into the club","Procedure to get into the club"],
-			"responses": ["through the Icebreaker Program, it's a two week program. You'll get to interact and work with new peeps.We also conduct useful webinars.The goal is'nt completing the project,it's all about learning and building."],
+			"tag": "operator-declaration",
+			"patterns": ["syntax of operators in python","declaration of operators in python","how to declare an operator in python","how do i declare an operator in python with example","sample example of an operator"],
+			"responses": ["Python does not allow you to declare your own operators in python. Addition (+) \n Subtraction(-) \n Multiplication(*) \n Exponentiation(**) \n  Division(/) \n Modulus(%) \n Enter types of operator to know more"],
 			"context": [""]
 		},
 		{
-			"tag": "programs",
-			"patterns": ["what do we do once we get in?","what happens after we get in?"],
-			"responses": ["We do have various events in store for you guys.One of the events is tech clusters,where you get to choose a domain of your choice and work on a project for two weeks. As a matter of fact, i'm one of those projects XD"],
+			"tag": "kilpo",
+			"patterns": ["what are the basic data types in python","what are the datatypes that can be used","how do i start off with coding in python","basic data types ?" ],
+			"responses": ["A short neumonic to remember these by is KILPO- Keywords,Identifiers,Punctuators and Operators\n 1.Keywords are reserved words in Python that have a pre-defined meaning\n examples:False,True,None,try,if,in,not,or,pass,from etc\n 2.Identifiers are a sequence of one or more cgaracter elements used to provide name for a given program element\n examples:line,num,test_1 etc\n Naming Convention:\n Can begin with A-Z or a-z\n cannot begin with a digit(0-9) or special characters\n spaces are not allowed\n Underscore can be used to aid us in readability of long identifier names\n "],
 			"context": [""]
 		},
 		{
-			"tag": "folks",
-			"patterns": ["how are the peeps here?","how are the folks at Newolf society?"],
-			"responses": ["We are a bunch of fun,interesting,enthusiastic people and we can't wait to meet you :)"],
+			"tag": "stringdefination",
+			"patterns": ["what is a string","string","string defination","how do you define a string"],
+			"responses": ["A string is the collection of characters or a sequence of characters. \nEx:'python','go123'"],
 			"context": [""]
 		},
 		{
-			"tag": "why",
-			"patterns": ["why should i get in?","what will i learn?","how is this going to benefit me?","how is this going to help me?"],
-			"responses": ["You will learn new stuff and get to work on some amazing projects,moreover the experience is really fun,we don't want you missing out on that,just check out our website to get a clearer picture"],
+			"tag": "stringcreation",
+			"patterns": ["how to create a string","string creation"],
+			"responses": ["Creating strings is as straight forward as assigning a value to a variable. \nEx: var='python'"],
 			"context": [""]
 		},
 		{
-			"tag": "qualification",
-			"patterns": ["do i need to be techsaavy to get in?","can anyone get in?","who and all get in?","are there any pre-requirements to get in?"],
-			"responses": ["Anyone who is interested in tech,wants to learn and believes in themselves will get in ,just participate in the IceBreaker program"],
+			"tag": "stringindexing",
+			"patterns": ["how to index a string","string indexing","can we access each character","accessing each character"],
+			"responses": ["A string of n characters is indexed starting from 0 to n-1 and each character can be indexed using these indexes. \nEg:var='python',var[0]='p',var[3]='h'"],
 			"context": [""]
 		},
 		{
-			"tag": "contact",
-			"patterns": ["how do we contact you guys?","how do we get in touch with you guys?","what is your instagram handle?","contact info?","are you guys on linkedin?","what social media platforms are you guys available on?"],
-			"responses": ["For more info about us/to contact us please head over to LinkedIn:https://in.linkedin.com/company/newolfsociety  Instagram:https://www.instagram.com/newolfsociety/?hl=en  Medium:https://medium.com/newolf-society/about  Discord:https://discord.com/invite/MZnG9rPgMG  Youtube:https://www.youtube.com/channel/UCRbkf2XQFSaZ6Dg6moT1sGQ  email:societynewolf@gmail.com"],
+			"tag": "stringcharacteristsics",
+			"patterns": ["what are the characteristics of string","string characteristics"],
+			"responses": ["1.Strings are immutable i.e. we cannot modify individual characters \n2.A string can have zero or more characters\n3.String is iterable\n4.Each character of strings can be accessed by indexing"],
+			"context": [""]
+		},
+		{
+			"tag": "stringslicing",
+			"patterns": ["how to slice strings","string slicing","how to obtain substring","substring","access part of string"],
+			"responses": ["Strings can be sliced. We can obtain substrings through slicing\nEx: s='Monty python'\ns[0:4]='Monty' , s[6:7]='p'"],
+			"context": [""]
+		},
+		{
+			"tag": "stringoperations",
+			"patterns": ["string operations","what operations can we perform on strings","operations on strings"],
+			"responses": ["1)len()\n2)min()\n3)max()\n4)Concatenation '+'\n5)Repetition operator '*'"],
+			"context": [""]
+		},
+		{
+			"tag": "operator",
+			"patterns": ["what can I learn in operators","what are operators","operators in python","operators"],
+			"responses": ["An operator is a symbol that denotes an operation that is performed on data. The data used with operators is called an operand"],
+			"context": [""]
+		},
+		{
+			"tag": "operator-declaration",
+			"patterns": ["syntax of operators in python","declaration of operators in python","how to declare an operator in python","how do i declare an operator in python with example","sample example of an operator"],
+			"responses": ["Python does not allow you to declare your own operators in python. Addition (+) \n Subtraction(-) \n Multiplication(*) \n Exponentiation(**) \n  Division(/) \n Modulus(%) \n Enter types of operator to know more"],
+			"context": [""]
+		},
+		{
+			"tag": "operator-types",
+			"patterns": ["what are the types of operators", "how many types of operators are there", "unary and binary operator ","arity","rank","types of operator","operator types"],
+			"responses": ["There are two main types of operators in python - binary operators and unary operators. Enter unary or binary keywords to know more"],
+			"context": [""]
+		},
+		{
+			"tag": "operator-unary",
+			"patterns": ["what is a unary operator", "unary operator examples", "unary ","what is the meaning of a unary operator","define unary operators","explain unary operators"],
+			"responses": ["Unary Operators are those which operates on only one operand. eg negation operator -x will give the negative value of variable x. -5 will give the negative value of 5"],
+			"context": [""]
+		},
+		{
+			"tag": "operator-binary",
+			"patterns": ["what is a binary operator", "binary operator examples", "binary ","what is the meaning of a binary operator","explain binary operators to me","define binary operators"],
+			"responses": ["Binary Operators are those which require 2 operands.There are various types of binary operators like addition, subtraction, multiplication, division, exponentiation, modulus etc. Type which binary operator you would like to know more about"],
+			"context": [""]
+		},
+		{
+			"tag": "binary-addition",
+			"patterns": ["what is a binary addition operator", "binary addition operator examples", "addition","what is the meaning of a addition operator", "addition operator in python","tell me about the addition operator in python"],
+			"responses": ["The binary addition operator is represented using + and it returns the arithmetic sum of the two operands. eg 2+3 = 5 \n 4+5=9 \n 2+8=10. Different data types will return different answer values depending on the data type of the two operands\n  Adding 2 integers will return an integer value eg. 2+4=6 \n Adding two floating point values will return a floating point value. eg 4.0+3.0=7.0 \n Adding one floating point value to one integer type value will return a floating type value eg 1+2.0=3.0 and 1.0+2=3.0"],
+			"context": [""]
+		},
+		{
+			"tag": "binary-subtraction",
+			"patterns": ["what is a binary subtraction operator", "binary subtraction operator examples", "subtraction","what is the meaning of a subtraction operator", "subtraction operator in python","tell me about the subtraction operator in python"],
+			"responses": ["The binary subtraction operator is represented using - and it returns the difference between the two operands. eg 12-7 = 5 \n"],
+			"context": [""]
+		},
+		{
+			"tag": "binary-multiplication",
+			"patterns": ["what is a binary multiplication operator", "binary multiplication operator examples", "multiplication","what is the meaning of a multiplication operator", "multiplication operator in python","tell me about the multiplication operator in python"],
+			"responses": ["The multiplication operator can be used only in the binary mode with 2 operands. It is represented with * and will return the product value of the two operands. eg. 5*6 = 30","The multiplication operator can be used only in the binary mode. It is represented with * and will return the product value of the two operands. eg. 7*3 = 21","The multiplication operator can be used only in the binary mode. It is represented with * and will return the product value of the two operands. eg. 8*4 = 32"],
+			"context": [""]
+		},
+		{
+			"tag": "binary-division",
+			"patterns": ["what is a binary division operator", "binary division operator examples", "division","what is the meaning of a division operator", "division operator in python","tell me about the division operator in python"],
+			"responses": ["The division operator can be used only in the binary mode with 2 operands. It is represented with / and will return the quotient value of the two operands. eg. 45/9 = 5","The division operator can be used only in the binary mode with 2 operands. It is represented with / and will return the quotient value of the two operands. eg. 63/7 = 9","The division operator can be used only in the binary mode with 2 operands. It is represented with / and will return the quotient value of the two operands. eg. 10/3 = 3"],
 			"context": [""]
 		}
 	]
