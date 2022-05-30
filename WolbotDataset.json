@@ -7,14 +7,14 @@
 		},
 		{
 			"tag": "goodbye",
-			"patterns": ["bye", "see you later", "goodbye", "gtg", "nice chatting with you", "till next time"],
-			"responses": ["Adios amigo","byeee","have a nice day :)","See ya later!byeee"],
+			"patterns": ["bye", "see you later", "goodbye", "gtg", "nice chatting with you"],
+			"responses": ["byeee","have a nice day :)","bye !"],
 			"context": [""]
 		},
 		{
 			"tag": "thanks",
 			"patterns": ["thanks", "thank you", "thanks for the help","ty","tysm"],
-			"responses": ["no issues", "Anytime!1", "You're welcome"],
+			"responses": ["no issues", "Anytime!", "You're welcome"],
 			"context": [""]
 		},
 		{
@@ -29,6 +29,8 @@
 			"responses": ["Hey there ! I have been programmed to aid you in your process of learning python\n Table of Contents :\n 1.Keywords\n 2.Strings\n 3.Identifiers\n 4.Operators and Expressions\n what would you like to start with ?"],
 			"context": [""]
 		},
+		{	"tag": "
+		}
 		{
 			"tag": "operator-declaration",
 			"patterns": ["syntax of operators in python","declaration of operators in python","how to declare an operator in python","how do i declare an operator in python with example","sample example of an operator"],
@@ -37,19 +39,63 @@
 		},
 		{
 			"tag": "kilpo",
-			"patterns": ["what are the basic data types in python","what are the datatypes that can be used","how do i start off with coding in python","basic data types ?" ],
-			"responses": ["A short neumonic to remember these by is KILPO- Keywords,Identifiers,Punctuators and Operators\n 1.Keywords are reserved words in Python that have a pre-defined meaning\n examples:False,True,None,try,if,in,not,or,pass,from etc\n 2.Identifiers are a sequence of one or more cgaracter elements used to provide name for a given program element\n examples:line,num,test_1 etc\n Naming Convention:\n Can begin with A-Z or a-z\n cannot begin with a digit(0-9) or special characters\n spaces are not allowed\n Underscore can be used to aid us in readability of long identifier names\n "],
+			"patterns": ["what are the basics to python programming","what are the basics","how do i start off with coding in python","basics ?" ],
+			"responses": ["A short neumonic to remember these by is KILPO- Keywords,Identifiers,Punctuators and Operators"],
 			"context": [""]
 		},
 		{
-			"tag": "stringdefination",
+			"tag": "keywords",
+			"patterns": ["what are keywords in python","what is a keyword","keywords" ],
+			"responses": ["Keywords are reserved words that have a pre-defined meaning\n List of keywords in Python:\n False,True,else,break,as,def,del,in,is,return,try,while,with,yield,not,or,for,from,class,elif and so on"],
+			"context": [""]
+		},
+		{
+			"tag": "identifier",
+			"patterns": ["what are identifiers in Python","identifiers in python","ientifiers" ],
+			"responses": ["An identifier is a sequence of one or more characters used to provide a name for a given program element\n Examples: line , num_credits and gpa\n Python is case sensitive , thus, Line is different from lineIdentifiers may contain letters and digits and underscorecharacter\n Naming Convention:\n Can begin with alphabets a-z or A-Z\n Cannot begin with a digit 0-9 or a special character\n Spaces are not allowed as part of an identifier\n underscore character, _ is also allowed to aid in the readability of long identifier names.It should not be used as the first character\n valid idntifiers are total_sales,totalSales\n Invalid identifiers are _2110totalsales,total sales "],
+			"context": [""]
+		},
+		{
+			"tag": "datatypes",
+			"patterns": ["what are the basic data types in python","datatypes in python","data types in python","basic data types in python","types of data","types of data in python","types in python" ],
+			"responses": ["str,int,float,complexlist,tuple,range,dict,set,bool,frozenset,bytearray,memoryview,NoneType\n we don't need to explicitly spicify what the variable type is it is declared on it's own depending on the values"],
+			"context": [""]
+		},
+		{
+			"tag": "datatypes-int",
+			"patterns": ["what is the int dataype","what is the integer datatype","syntax for int datatype","syntax for int","syntax for integer datatype","how is int datatype defined","int definition","what is the declaration of int datatype","int definition","integer definition" ],
+			"responses": ["int is an integer datatype\n syntax:x = 20\n "],
+			"context": [""]
+		},
+		{
+			"tag": "datatypes-float",
+			"patterns": ["what is the float dataype","what is the floating point datatype","syntax for float datatype","syntax for float","syntax for floating point datatype","how is float datatype defined","float definition","what is the declaration of float datatype","float definition","floating point definition"],
+			"responses": ["float is a numeric datatype,that consists of decimal values\n syntax:x = 20.5\n "],
+			"context": [""]
+		},
+		{
+			"tag": "datatypes-list",
+			"patterns": ["what is the list datatype","list data type","what is the syntax for list datatype","list datatype syntax","declaration of list","list definition","what is the definition for list","list syntax"],
+			"responses": ["A list is a sequence data structure\n syntax:x = ['apple','banana','cherry']"],
+			"context": [""]
+		},
+		{
+			"tag": "datatypes-tuple",
+			"patterns": ["what is the tuple datatype","tuple data type","what is the syntax for tuple datatype","tuple datatype syntax","declaration of tuple","tuple definition","what is the definition for tuple","tuple syntax"],
+			"responses": ["A tuple is a sequence data structure\n syntax:x = x = ('apple','mango','cherry')"],
+			"context": [""]
+		},
+		
+		
+		{
+			"tag": "stringdefinition",
 			"patterns": ["what is a string","string","string defination","how do you define a string"],
 			"responses": ["A string is the collection of characters or a sequence of characters. \nEx:'python','go123'"],
 			"context": [""]
 		},
 		{
 			"tag": "stringcreation",
-			"patterns": ["how to create a string","string creation"],
+			"patterns": ["how to create a string","string creation","string syntax","what is the syntax of a string"],
 			"responses": ["Creating strings is as straight forward as assigning a value to a variable. \nEx: var='python'"],
 			"context": [""]
 		},
